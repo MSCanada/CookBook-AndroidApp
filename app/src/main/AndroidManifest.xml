@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="muhammadsuhail.cookbook" >
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cover"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".CookBook"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Holo.Light"
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+
+        <service
+            android:name=".SoundPlay"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:theme="@android:style/Theme.Holo.Light"
+            android:name=".Recipe_display"
+            android:label="@string/title_activity_recipe_display"
+            >        </activity>
+    </application>
+
+</manifest>

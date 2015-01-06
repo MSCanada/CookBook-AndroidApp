@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ebookfrenzy.test_app.Recipe_display">
+
+    <item android:id="@+id/addtodb" android:title="Save to favourites"
+        android:icon="@drawable/ic_storetosd"
+        android:orderInCategory="100"  android:showAsAction="always" />
+    <item
+        android:showAsAction="always"
+        android:icon="@drawable/printer"
+        android:title="Print or Save to PDF"
+        android:orderInCategory="200"
+        android:id="@+id/print"
+
+    />
+
+
+</menu>
